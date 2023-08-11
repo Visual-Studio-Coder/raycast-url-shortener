@@ -1,10 +1,10 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "url-shortener",
-  "title": "ShrtCO.de - Free URL Shortener with No API Key required",
+  "title": "ShrtCO.de - Free URL Shortener With No API Key Required",
   "description": "Experience the joy of shortening URLs to your heart's desire with Raycast's ShrtCO.de URL Shortener extension! Enjoy the convenience of free URL shortening, without the need for an API key or any rate limits.",
   "icon": "command-icon.png",
-  "author": "VaibhavSatishkumar",
+  "author": "Vaibhav-Satishkumar",
   "license": "MIT",
   "commands": [
     {
