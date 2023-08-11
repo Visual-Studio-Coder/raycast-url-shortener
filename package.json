@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "url-shortener",
-  "title": "URL Shortener",
-  "description": "URL Shortener shortens URLS for free.",
+  "title": "ShrtCO.de - Free URL Shortener with No API Key required",
+  "description": "Experience the joy of shortening URLs to your heart's desire with Raycast's ShrtCO.de URL Shortener extension! Enjoy the convenience of free URL shortening, without the need for an API key or any rate limits.",
   "icon": "command-icon.png",
   "author": "VaibhavSatishkumar",
   "license": "MIT",
@@ -10,13 +10,41 @@
     {
       "name": "shorten-url",
       "title": "Shorten URL",
-      "subtitle": "Replace selected link with shortened link",
+      "subtitle": "Replace selected text (a valid link) with shortened link",
       "description": "Using your selected text (a valid link), URL Shortener will replace it with a shortened link which redirects to your desired selected URL.",
-      "mode": "view"
+      "mode": "no-view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "domain",
+      "title": "Domain",
+      "description" : "This is what will be used in your shortened links.",
+      "type": "dropdown",
+      
+      "required" : true
+      ,
+      "data": [
+        {
+          "title": "shrtco.de",
+          "value": "1"
+        },
+        {
+          "title": "9qr.de",
+          "value": "2"
+        },
+        {
+          "title": "shiny.link",
+          "value": "3"
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.57.0"
+    "@raycast/api": "^1.57.0",
+    "shortid": "^2.2.16",
+    "express": "^4.18.2",
+    "tinyurl-api": "^1.0.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.5",
