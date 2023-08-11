@@ -19,11 +19,9 @@
     {
       "name": "domain",
       "title": "Domain",
-      "description" : "This is what will be used in your shortened links.",
+      "description": "This is what will be used in your shortened links.",
       "type": "dropdown",
-      
-      "required" : true
-      ,
+      "required": true,
       "data": [
         {
           "title": "shrtco.de",
@@ -42,14 +40,15 @@
   ],
   "dependencies": {
     "@raycast/api": "^1.57.0",
-    "shortid": "^2.2.16",
+    "@raycast/utils": "^1.9.0",
     "express": "^4.18.2",
-    "tinyurl-api": "^1.0.1",
-    "node-fetch": "^3.2.10"
+    "shortid": "^2.2.16",
+    "tinyurl-api": "^1.0.1"
   },
   "devDependencies": {
     "@raycast/eslint-config": "1.0.5",
     "@types/node": "18.8.3",
+    "@types/node-fetch": "^2.6.4",
     "@types/react": "18.0.9",
     "eslint": "^7.32.0",
     "prettier": "^2.5.1",
