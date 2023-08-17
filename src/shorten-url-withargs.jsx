@@ -8,7 +8,11 @@ export default async function Command(props) {
     const regexURL = /^((ftp|smtp|file|data):\/\/)?[^\s$.?#].[^\s]*$/;
 
     if (!regexURL.test(url)) {
-      await showToast({title: "Selected text isn't a URL.", style: Toast.Style.Failure, message: "Selected text isn't a URL."});
+      await showToast({
+        title: "Selected text isn't a URL.",
+        style: Toast.Style.Failure,
+        message: "Selected text isn't a URL.",
+      });
     } else {
       showToast({
         style: Toast.Style.Animated,
@@ -44,10 +48,8 @@ export default async function Command(props) {
         }
       }
 
-      
-        await Clipboard.copy(URLString);
-        await showHUD("Copied URL to Clipboard");
-      
+      await Clipboard.copy(URLString);
+      await showHUD("Copied URL to Clipboard");
     }
   } catch (error) {
     await showToast({
